@@ -1,6 +1,7 @@
 <?php
 
 require_once "Constantes.php";
+include($_SERVER['DOCUMENT_ROOT'].'/utils/Utils.php');
 
 
 class PersonajeHandlerModel
@@ -48,6 +49,7 @@ class PersonajeHandlerModel
 
     public static function postPersonaje($listaPersonajes)
     {
+        //Utils::autenticarse();
         $db = DatabaseModel::getInstance();
         $db_connection = $db->getConnection();
 
@@ -79,6 +81,7 @@ class PersonajeHandlerModel
 
     public static function putPersonaje($personaje)
     {
+        //Utils::autenticarse();
         $db = DatabaseModel::getInstance();
         $db_connection = $db->getConnection();
 
@@ -101,6 +104,7 @@ class PersonajeHandlerModel
 
     public static function deletePersonaje($id)
     {
+        //Utils::autenticarse();
         $db = DatabaseModel::getInstance();
         $db_connection = $db->getConnection();
 
@@ -120,4 +124,5 @@ class PersonajeHandlerModel
 
         return $res;
     }
+
 }

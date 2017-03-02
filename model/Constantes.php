@@ -11,6 +11,7 @@ class Constantes
     const ID = "id";
     const NICK = "Nick";
     const CONTRASENA = "Contrasena";
+    const ADMIN = "Admin";
     const NOMBRE = "Nombre";
     const FACCION = "Faccion";
 }
